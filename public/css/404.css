@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.window{
+    background-color: antiquewhite;
+    border-radius: 1em;
+    max-width: 200vh;
+    margin-top: 15vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.search div div{
+    width: 2vh;
+    height: 2vh;
+    border-radius: 4vh;
+}
+
+.bar{
+    background-color: burlywood;
+    border-radius: 2vh;
+    width: 60%;
+    height: 2vh;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: rgb(66, 80, 117);
+    max-height: 0.5em;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circles div{
+    margin-left: 0.5em;
+}
+
+.circle1{
+    background-color: red;
+}
+
+.circle2{
+    background-color: yellow;
+}
+
+.circle3{
+    background-color: greenyellow;
+}
+
+.page404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180vh;
+    padding: 4vh;
+}
+
+.text{
+    font-size: 10vh;
+}
+
+.colorred{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(213, 54, 54);
+    width: 80%;
+}

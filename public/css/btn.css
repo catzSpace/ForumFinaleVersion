@@ -1,0 +1,26 @@
+.register_loggin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    margin-top: 3em;
+    max-width: 90vh;
+}
+
+.btn_L{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(46, 218, 161);
+    width: 5em;
+    height: 1.5em;
+    margin-top: 1em;
+    border-radius: 1vh;
+}
+
+.btn_L:hover{
+    background-color: red;
+}
