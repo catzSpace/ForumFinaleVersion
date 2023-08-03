@@ -2,19 +2,19 @@ const socket = io()
 
 let message = document.querySelector('#message');
 const username = document.cookie
-const value = username.replace('user=', ' ')
+const user = username.replace('user=', ' ')
 let btn = document.querySelector('#send');
 let output = document.querySelector('.message_output');
 let actions = document.querySelector('.actions');
 const profile = document.querySelector('.profile');
 
 
-profile.innerHTML = value
+profile.innerHTML = user
 
 function pressEnter(event){  //detectar tecla "enter" para enviar mensajes
     if (event.keyCode === 13 && message.value.trim() !== ''){
         socket.emit('mensaje:cliente', {
-            username: value,
+            username: user,
             message: message.value
         });
         message.value = '';
@@ -25,7 +25,7 @@ function pressEnter(event){  //detectar tecla "enter" para enviar mensajes
 btn.addEventListener('click', () => {
     if (message.value.trim() !== '') {
         socket.emit('mensaje:cliente', {
-            username: value,
+            username: user,
             message: message.value
         });
         message.value = '';
