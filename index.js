@@ -5,7 +5,8 @@ const register = require('./src/register.js');
 const login = require('./src/login.js');
 const socketio = require('socket.io');
 const conn = require('./src/conn.js');
-const deleteAccount = require('./src/delete.js')
+const deleteAccount = require('./src/delete.js');
+const updateinfo = require('./src/updateuser.js');
 require('dotenv').config();
 
 
@@ -62,7 +63,8 @@ app.use(express.urlencoded({ extended: true }));
 //query
 app.use(register);
 app.use(login);
-app.use(deleteAccount)
+app.use(deleteAccount);
+app.use(updateinfo);
 
 
 
@@ -79,6 +81,6 @@ app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, './public/register.html'))
 });
 
-app.get('/settings', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/delete.html'))
+app.post('/settings', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/settings.html'))
 })

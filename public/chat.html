@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/socket.io/socket.io.js"></script>
     <script defer src="js/chat.js"></script>
+    <link rel="icon" href="assets/icons/icon.png">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     <title>chat</title>
 </head>
@@ -17,10 +18,12 @@
             <div class="message_output"></div>
             <div class="actions"></div>
             <input type="text" id="message" placeholder="message" onkeydown="pressEnter(event)"/>
-            <input id="send" type="submit" placeholder="message"/>
+            <input id="send" type="submit" value="send"/>
         </div>
     </div>
-    <a href="/settings">config</a>
+    <form action="/settings" method="post">
+        <input type="submit" value="config">
+    </form>
 
 </body>
 </html>
