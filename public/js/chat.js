@@ -8,7 +8,6 @@ let output = document.querySelector('.message_output');
 let actions = document.querySelector('.actions');
 const profile = document.querySelector('.profile');
 
-
 profile.innerHTML = user
 
 function pressEnter(event){  //detectar tecla "enter" para enviar mensajes
@@ -32,14 +31,21 @@ btn.addEventListener('click', () => {
     }
 });
 
-socket.emit('render:cliente', (data)=>{})
+socket.emit('render:cliente', (data) => {})
 
 socket.on('render:server', (data) => {
     data.forEach(data => {
-        output.innerHTML += `<p>${data.usuario}: ${data.mensaje}</p>`
+        output.innerHTML += `<div>
+            <p class="mensajenuevo" >${data.usuario}: ${data.mensaje}</p>
+        </div>
+        `
     });
 })
 
 socket.on('mensaje:server', (data) => {
-    output.innerHTML += `<p>${data.username}: ${data.message}</p>`
-})
+    output.innerHTML += `<div>
+    <p class="mensajenuevo" >${data.username}: ${data.message}</p>
+</div>
+`
+});
+

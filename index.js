@@ -31,7 +31,6 @@ io.on('connection', (socket) => {
             }
         })
     })
-    
 
     socket.on('mensaje:cliente', (data) => {
         const usuario = data.username
