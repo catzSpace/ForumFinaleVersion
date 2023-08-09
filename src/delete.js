@@ -8,7 +8,7 @@ query.use(cookieParser())
 
 
 const deleteAccount = query.post('/delete', (req, res) => {
-    proof = req.cookies
+    proof = req.cookies // llamando las cookies ya definidas (nombre de usuario)
     data = req.body
     let useractive = proof.user
 

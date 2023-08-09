@@ -36,16 +36,18 @@ socket.emit('render:cliente', (data) => {})
 socket.on('render:server', (data) => {
     data.forEach(data => {
         output.innerHTML += `<div>
-            <p class="mensajenuevo" >${data.usuario}: ${data.mensaje}</p>
-        </div>
-        `
+                <p class="usuario" >${data.usuario}:</p>
+                <p class="mensaje">${data.mensaje}</p>
+            </div>
+            `
     });
 })
 
 socket.on('mensaje:server', (data) => {
     output.innerHTML += `<div>
-    <p class="mensajenuevo" >${data.username}: ${data.message}</p>
-</div>
-`
+            <p class="usuario" >${data.usuario}:</p>
+            <p class="mensaje">${data.mensaje}</p>
+        </div>
+        `
 });
 

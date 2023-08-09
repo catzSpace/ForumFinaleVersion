@@ -1,14 +1,14 @@
 {
   "name": "foro-finale-version",
   "version": "1.0.0",
-  "description": "",
+  "description": "forum with sockets and mysql data base",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "catzSpace",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
