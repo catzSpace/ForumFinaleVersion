@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 91vh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #163541;
+    min-width: 20%;
+    height: auto;
+    font-size: 3vh;
+}
+
+header form input{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 1vh;
+}
+
+.enc{
+    height: 5%;
+    color: white;
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 10px -6px rgb(22, 22, 22);
+}
+
+.enc p a{
+    text-decoration: none;
+    color: white;
+}
+
+.enc img{
+    max-width: 6vh;
+}
+
+.enc input{
+    opacity: 0;
+}
+
+
+.profile{
+    color: orange;
+}
+
+.container_chat{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0D2A35;
+    width: 80%;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.ventana{
+    max-height: 91vh;
+}
+
+.message_output{
+    height: 95%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.text-area{
+    max-width: 100%;
+    min-height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+#message{
+    width: 80%;
+    height: 4vh;
+    border-radius: 5vh;
+    padding-left: 2vh;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+#send {
+    display: flex;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vh;
+    border: none;
+    border-radius: 5vh;
+}
+
+.mens{
+    width: fit-content;
+    height: auto;
+    max-width: 80%;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    padding: 1vh 1vh 1vh 1vh;
+    border-radius: 2vh;
+    color: white;
+    display: block; /*NO UTILIZAR DISPLAY FLEX EN ESTA SHIT!!!!!*/
+    align-items: center;
+    margin-left: 1em;
+    font-size: 2.5vh;
+}
+
+.fecha{
+    font-size: 1.5vh;
+    opacity: 70%;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2.5vh;
+}
+
+.menu a:hover{
+    background-color: #0D2A35;
+    cursor: pointer;
+}
+
+.usuario{
+    color: orange;
+}
+
+@media (max-width: 950px){
+    header{
+        position: fixed;
+        opacity: 0;
+        top: 100vh;
+    }
+    .container_chat{
+        width: 100%;
+    }
+    .enc input{
+        opacity: 100;
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 1vh;
+    }
+    .ventana{
+        max-height: 89.8vh;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+}

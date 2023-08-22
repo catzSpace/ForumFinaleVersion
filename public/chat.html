@@ -7,26 +7,53 @@
     <script defer src="js/chat.js"></script>
     <link rel="icon" href="assets/icons/icon.png">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <link rel="stylesheet" href="./css/desktop/chats/chatdesk.css">
+    <link rel="stylesheet" href="css/user/chat.css">
     <title>chat</title>
 </head>
 <body>
     <header>
         <p class="profile"></p>
+        <div class="menu"> 
+            
+            <a href="/chat">Home</a>
+            <br>
+            <a href="/Music">Music</a>
+            <br>
+            <a href="/prog">Development</a>
+            <br>
+            <a href="/tech">Tech</a>
+            <br>
+            <a href="/dance">Dance</a>
+            <br>
+            <a href="/games">Games</a>
+            <br>
+            <a href="/memes">Memes</a>
+            <br>
+            <a href="/international">World</a>
+
+        </div>
+        <form action="/settings" method="post">
+            <input type="submit" value="config">
+        </form>
     </header>
-    <div class="container_chat">
-        <div class="ventana">
+    <main class="container_chat">
+        <div class="enc">
+            <img src="assets/img/logo.png" alt="">
+            <p><a href="/">forum T<span class="usuario">ur</span>T</a></p>
+            <form action="/settings" method="post">
+                <input type="submit" value="config">
+            </form>
+        </div>
+        <section class="ventana">
             <div class="message_output">
                 <!--relleno-->
             </div>
-            <div class="actions"></div>
-            <input type="text" id="message" placeholder="message" onkeydown="pressEnter(event)"/>
-            <input id="send" type="submit" value="send"/>
-        </div>
-    </div>
-    <form action="/settings" method="post">
-        <input type="submit" value="config">
-    </form>
+            <div class="text-area">
+                <input type="text" id="message" placeholder="message" onkeydown="pressEnter(event)"/>
+                <input id="send" type="submit" value="send"/>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
