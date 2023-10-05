@@ -4,7 +4,7 @@ let intro = document.querySelector('.intro');
 window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         intro.style.top = '-100vh'
-    }, 2000);
+    }, 800);
 
 }); 
 
@@ -113,7 +113,7 @@ if (localStorage.getItem('light') == 'true') {
     enca.classList.remove('light');
 }
 
-//boton
+//button
 if (localStorage.getItem('orange') == 'true'){
     btn.classList.remove('purple');
     btn.classList.add('orange');

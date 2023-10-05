@@ -13,7 +13,7 @@ const register = query.post('/', (req, res) => {
             if (results.length >= 1) {
                 res.send('usuario ya existente');
             } else {
-                conn.query(`INSERT INTO usuarios(id, nombre, contraseña) VALUES ('','${nombre}','${contra}')`, 
+                conn.query(`INSERT INTO usuarios(id, nombre, contraseña) VALUES ('','${nombre}','${contra}')`,
                 (err, results) => {
                     if (err) {
                         console.log(err);

@@ -142,6 +142,12 @@ header h2{
     font-size: 1.5em;
 }
 
+.grafic{
+    margin-top: 2vh;
+    max-width: 100%;
+    border: 2px solid;
+}
+
 .bienv{
     display: flex;
     justify-content: center;
@@ -153,7 +159,12 @@ header h2{
     margin-top: 2em;
 }
 
+
 .links{
     text-decoration: none;
     color: rgb(46, 218, 161);
+}
+
+.bienv{
+    user-select: none;
 }

@@ -14,7 +14,7 @@ const date = new Date();
 let año = date.getFullYear()
 let mes = date.getMonth() + 1
 let dia = date.getDate()
-let act = `${año}-${mes}-${dia}`
+let act = `${año}-${mes}-${dia}` //devolviendo un string con toda la fecha
 
 //agregando el nombre de usuario en el front 
 profile.innerHTML = user
@@ -31,7 +31,7 @@ function pressEnter(event){  //detectar tecla "enter" para enviar mensajes
 }
 
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', () => { //enviar mensajes con boton en pantalla
     if (message.value.trim() !== '') {
         socket.emit('mensaje:cliente', {
             username: user,
