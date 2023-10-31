@@ -3,7 +3,8 @@ const socket = io()
 //llamando elementos 
 let message = document.querySelector('#message');
 const usernamecookie = document.cookie
-const user = usernamecookie.replace('user=', ' ')
+const u = usernamecookie.replace('; abuse_interstitial=41dd-45-225-227-21.ngrok-free.app', ' ');
+const user = u.replace('user=', ' ')
 let btn = document.querySelector('#send');
 let output = document.querySelector('.message_output');
 let actions = document.querySelector('.actions');

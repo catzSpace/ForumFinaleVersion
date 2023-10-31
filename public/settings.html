@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/icons/icon.png">
+    <link rel="stylesheet" href="css/user/formulario.css">
     <title>settings</title>
 </head>
-<body>
-    <p>borrar</p>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>borrar</h1>
     <form action="/delete" method="post">
         <input type="text" placeholder="nombre" name="usuario">
         <input type="password" placeholder="contra" name="contra">
-        <button type="submit">delete</button>
+        <button class="boton" type="submit">delete</button>
     </form>
 
-    <p>actualizar</p>
+    <h1>actualizar</h1>
     <form action="/update" method="post">
         <input type="text" placeholder="nombre" name="usuario">
         <input type="password" placeholder="contra" name="contra">
         <input type="text" placeholder="new name" name="newname">
-        <button type="submit">update</button>
+        <button class="boton" type="submit">update</button>
     </form>
 </body>
 </html>

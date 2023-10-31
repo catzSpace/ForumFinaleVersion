@@ -16,6 +16,7 @@ const login = query.post('/chat', (req, res) => {
                 res.cookie('user', nombre);
                 res.sendFile(path.join(__dirname, '../public/chat.html'));
                 res.clearCookie('PHPSESSID')
+                res.clearCookie('abuse_interstitial')
             }
         })
     } else {

@@ -3,8 +3,7 @@ const express = require('express');
 const query = express();
 const cookieParser = require('cookie-parser');
 const path = require('path');
-query.use(cookieParser())
-
+query.use(cookieParser());
 
 
 const deleteAccount = query.post('/delete', (req, res) => {
