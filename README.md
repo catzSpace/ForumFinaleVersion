@@ -1,6 +1,6 @@
 # ForumFinaleVersion
 
-Proyecto de certificación escolar un foro / chat con actualizacion en tiempo real, permite a los usuarios, registrarse, loguearse, borrar su cuenta y actualizar su nombre de usuario
+Proyecto de certificación escolar, un foro / chat con actualizacion en tiempo real, permite a los usuarios, registrarse, loguearse, borrar su cuenta y actualizar su nombre de usuario
 
 # Tecnologias 
 * Nodejs: Entorno de desarrollo en el cual se monto el proyecto.
