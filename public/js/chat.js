@@ -31,7 +31,6 @@ function pressEnter(event){  //detectar tecla "enter" para enviar mensajes
     }
 }
 
-
 btn.addEventListener('click', () => { //enviar mensajes con boton en pantalla
     if (message.value.trim() !== '') {
         socket.emit('mensaje:cliente', {
